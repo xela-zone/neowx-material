@@ -107,6 +107,18 @@
                     #end if
                 #end if
 
+                #if $Extras.Header.get("earthquakes_nav_link", "no") == "yes"
+                    #if $active_nav == 'earthquakes'
+                    <li class="nav-item active mr-2 mr-xl-3">
+                        <a class="nav-link" href="earthquakes.html">$Extras.Translations[$Extras.language].earthquakes</a>
+                    </li>
+                    #else
+                    <li class="nav-item mr-2 mr-xl-3">
+                        <a class="nav-link" href="earthquakes.html">$Extras.Translations[$Extras.language].earthquakes</a>
+                    </li>
+                    #end if
+                #end if
+
                 #if $Extras.Header.custom1_url != ""
                 <li class="nav-item mr-2 mr-xl-3">
                     <a class="nav-link" href="$Extras.Header.custom1_url">$Extras.Header.custom1_label</a>
