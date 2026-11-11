@@ -2,3 +2,10 @@
 /src/node_modules/
 /dist/skins/neowx-material/
 /dist/*.zip
+*.sdb
+*.sqlite
+*.db
+/tests/output/
+__pycache__/
+*.pyc
+.direnv/
